@@ -1,0 +1,45 @@
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript">let headID = document.getElementsByTagName("head")[0]; let newCss = document.createElement('link'); newCss.rel = 'stylesheet'; newCss.type = 'text/css'; newCss.href = "https://botmake.io/embed/bot466142.css"; let newScript = document.createElement('script'); newScript.src = "https://botmake.io/embed/bot466142.js"; newScript.type = 'text/javascript'; headID.appendChild(newScript); headID.appendChild(newCss);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="~/faviconpark.ico" />
+        <title> @ViewBag.Title </title>
+        <meta name="description" content="@ViewBag.Description" />
+        <meta name="keywords" content="@ViewBag.Keywords" />
+        @Styles.Render("~/bundles/css")
+    </head>
+    <body>
+        <div id="glavni">
+            <div id="header">
+
+                @{
+                    Html.RenderPartial("navigacioniMeni");
+                }
+
+            </div>
+
+            <div id="content">
+                @RenderBody()
+                @Html.ActionLink("Пријави се за упис на мастер ИТ", "FormaUpis")
+            </div>
+
+            <div id="sidebar">
+                @RenderSection("vts", false)
+                <h2>Gorske Oci:</h2>
+                <div id="orao">
+                    <img id="orao1" src="~/Content/orao.jpg">
+                </div>
+
+            </div>
+            <div id="footer">
+                @{
+                    Html.RenderPartial("navigacioniMeni");
+                }
+            </div>
+            
+        </div>
+        
+    </body>
+    
+    </html>
