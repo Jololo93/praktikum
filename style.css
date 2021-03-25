@@ -137,47 +137,31 @@ div.gallery img {width: 100%;
 @media only screen and (min-width: 769px) {
     #content {width: 75%;
         height:90%;}
-
     #sidebar {width:20%;
         height:90%;}
-
     #footer {margin: 0;}
-
         #footer ul {padding: 0;
             margin: 0;}}
-
 @media only screen and (max-width: 768px) {
     #header ul {padding: 0;
         margin: 0;}
-
         #header ul li a {display: block;}
-
     #content {width: 100%;}
-
     #sidebar {display: block;
         float:left;
         width:100%;}
-
-    #footer {margin: 0;}
-
+   #footer {margin: 0;}
         #footer ul {padding: 0;
             margin: 0;}
-
             #footer ul li a {display: block;}}
 @media only screen and (max-width: 480px) {
     #header ul {padding: 0;
         margin: 0;}
-
         #header ul li a {display: block;}
-
     #content {width: 100%;}
-
     #sidebar {display: none;}
-
     #footer {margin: 0;}
-
         #footer ul {padding: 0;
             margin: 0;}
-
             #footer ul li a {display: block;}      
 }
