@@ -1,41 +1,75 @@
+
     <html>
     <head>
         <meta charset="UTF-8">
         <script type="text/javascript">let headID = document.getElementsByTagName("head")[0]; let newCss = document.createElement('link'); newCss.rel = 'stylesheet'; newCss.type = 'text/css'; newCss.href = "https://botmake.io/embed/bot466142.css"; let newScript = document.createElement('script'); newScript.src = "https://botmake.io/embed/bot466142.js"; newScript.type = 'text/javascript'; headID.appendChild(newScript); headID.appendChild(newCss);</script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/x-icon" href="~/faviconpark.ico" />
-        <title> @ViewBag.Title </title>
-        <meta name="description" content="@ViewBag.Description" />
-        <meta name="keywords" content="@ViewBag.Keywords" />
-        @Styles.Render("~/bundles/css")
+        <link rel="shortcut icon" type="image/x-icon" href="/faviconpark.ico" />
+        <title> Nacionalni Parkovi Srbije </title>
+        <meta name="description" content="U Srbiji ima pet nacionalnih parkova, kao zaštićena područja od izuzetnog prirodnog, ali i kulturno-istorijskog značaja. Nacionalni parkovi podrazumevaju jedan od najviših oblika zaštite životne sredine. Zaštita prirode u Srbiji ima dugu tradiciju.Prvi pisani trag o tome se nalazi u Dušanovom zakoniku(član 123.) iz 14.veka, gde se definiše mogućnost i zabranjuje prekomerna seča šuma u tadašnjem Srpskom carstvu.Svojim ukupnim vrednostima danas nacionalni parkovi nadilaze granice Srbije i uključeni su u Evropsku federaciju nacionalnih parkova Nacionalni park je veće područje sa prirodnim ekosistemima visoke vrednosti u pogledu očuvanosti, složenosti građe i biogeografskih obeležja, sa raznovrsnim oblicima izvorne flore i faune, reprezentativnim fizičko - geografskim objektima i pojavama i kulturno - istorijskim vrednostima i predstavlja izuzetnu prirodnu celinu od nacionalnog značaja.  Svi naši nacionalni parkovi uključeni su u Evropsku federaciju nacionalnih parkova - EUROPARC.EUROPARC je mreža za prirodne i kulturne baštine koja radi na tome da poboljša upravljanje zaštićenim područjima u Evropi kroz međunarodnu saradnju, razmenu ideja i iskustva, kao i uticaja na politiku. Srbija ima pet NP počevši od juga NP Šar - planina , NP Kopaonik južnije u centralnoj Srbiji, zatim, NP Tara na zapadu, NP Đerdap na severoistoku i NP Fruška gora na jugozapadnom delu Vojvodine. Najstariji NP je Fruška gora osnovana 1960.god., a najmlađi Šar - planina osnovan 1986.god., dok su Tara i Kopaonik proglašeni NP 1981.god.a NP Đerdap 1974.god.Iako NP jeste zaštićeno područje, na svim našim NP se intenzivno razvija turizam, gradi se, seku se šume, prave skijaške staze." />
+        <meta name="keywords" />
+        <link href="/Content/forma.css" rel="stylesheet"/>
+<link href="/Content/style.css" rel="stylesheet"/>
+
     </head>
     <body>
         <div id="glavni">
             <div id="header">
 
-                @{
-                    Html.RenderPartial("navigacioniMeni");
-                }
+<div id="nav">
+    <ul>
+        <li class="current_page_item"> <a href="/">Početna</a></li>
+        <li><a href="/Home/oKopaoniku">Kopaonik</a></li>
+
+        <li><a href="/Home/sarP">Šar planina</a></li>
+        <li><a href="/Home/Tara">Tara</a></li>
+        <li><a href="/Home/Kontakt">Kontakt</a></li>
+
+    </ul>
+</div>
+
 
             </div>
 
             <div id="content">
-                @RenderBody()
-                @Html.ActionLink("Пријави се за упис на мастер ИТ", "FormaUpis")
+                
+
+
+<h2>Nacionalni Parkovi Srbije</h2>
+
+<p>
+    U Srbiji ima pet nacionalnih parkova, kao zaštićena područja od izuzetnog prirodnog, ali i kulturno-istorijskog značaja. Nacionalni parkovi podrazumevaju jedan od najviših oblika zaštite životne sredine. Zaštita prirode u Srbiji ima dugu tradiciju.Prvi pisani trag o tome se nalazi u Dušanovom zakoniku(član 123.) iz 14.veka, gde se definiše mogućnost i zabranjuje prekomerna seča šuma u tadašnjem Srpskom carstvu.Svojim ukupnim vrednostima danas nacionalni parkovi nadilaze granice Srbije i uključeni su u Evropsku federaciju nacionalnih parkova Nacionalni park je veće područje sa prirodnim ekosistemima visoke vrednosti u pogledu očuvanosti, složenosti građe i biogeografskih obeležja, sa raznovrsnim oblicima izvorne flore i faune, reprezentativnim fizičko - geografskim objektima i pojavama i kulturno - istorijskim vrednostima i predstavlja izuzetnu prirodnu celinu od nacionalnog značaja.  Svi naši nacionalni parkovi uključeni su u Evropsku federaciju nacionalnih parkova - EUROPARC.EUROPARC je mreža za prirodne i kulturne baštine koja radi na tome da poboljša upravljanje zaštićenim područjima u Evropi kroz međunarodnu saradnju, razmenu ideja i iskustva, kao i uticaja na politiku. Srbija ima pet NP počevši od juga NP Šar - planina , NP Kopaonik južnije u centralnoj Srbiji, zatim, NP Tara na zapadu, NP Đerdap na severoistoku i NP Fruška gora na jugozapadnom delu Vojvodine. Najstariji NP je Fruška gora osnovana 1960.god., a najmlađi Šar - planina osnovan 1986.god., dok su Tara i Kopaonik proglašeni NP 1981.god.a NP Đerdap 1974.god.Iako NP jeste zaštićeno područje, na svim našim NP se intenzivno razvija turizam, gradi se, seku se šume, prave skijaške staze.
+</p>
+
+
+
+
+                <a href="/Home/FormaUpis">Пријави се за упис на мастер ИТ</a>
             </div>
 
             <div id="sidebar">
-                @RenderSection("vts", false)
+                
+    Nacionalni parkovi Srbije: <iframe width="100%" height="315" src="https://www.youtube.com/embed/R9oUYLcHdDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
                 <h2>Gorske Oci:</h2>
                 <div id="orao">
-                    <img id="orao1" src="~/Content/orao.jpg">
+                    <img id="orao1" src="/Content/orao.jpg">
                 </div>
 
             </div>
             <div id="footer">
-                @{
-                    Html.RenderPartial("navigacioniMeni");
-                }
+<div id="nav">
+    <ul>
+        <li class="current_page_item"> <a href="/">Početna</a></li>
+        <li><a href="/Home/oKopaoniku">Kopaonik</a></li>
+
+        <li><a href="/Home/sarP">Šar planina</a></li>
+        <li><a href="/Home/Tara">Tara</a></li>
+        <li><a href="/Home/Kontakt">Kontakt</a></li>
+
+    </ul>
+</div>
+
             </div>
             
         </div>
