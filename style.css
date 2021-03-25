@@ -51,7 +51,7 @@ h3 {
     width: 100%;
     background-color: rgb(204, 153, 255);
     border-radius: 10px;
-    margin:auto;
+    float:left;
 }
 
 #footer {
