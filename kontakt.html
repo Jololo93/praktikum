@@ -1,4 +1,5 @@
 
+
     <html>
     <head>
         <meta charset="UTF-8">
@@ -30,16 +31,29 @@
             <div id="content">
             <div id="content">
     <h1 >Kontakt</h1>
-    <h3 id="kontakt1">Budi i ti deo nas!</h3>
+    
+	<form action="/action_page.php">
+
     <form id="kontakt">
+	 <fieldset>
+	 <legend>Prijava za aranzman!</legend>
         Ime:<br>
         <input type="text"> <br>
 
         Prezime:<br>
-        <input type="text"><br>
-        Vase misljenje
-<textarea>  </textarea><br>
+        <input type="text"><br><br>
+		<label for="cars">Koju destinaciju bi zeleli da posetite?</label>
+
+<select name="destinacija" id="destinacija">
+  <option value="oKopaoniku">Kopaonik</option>
+  <option value="sarP">Sar Planina</option>
+  <option value="Tara">Tara</option>
+  
+</select><br><br>
+        Unesite datum kada zelite da idete:<br>
+<textarea>  </textarea><br><hr>
         <input type="submit" value="Posalji">
+		 </fieldset>
     </form>
 
 
