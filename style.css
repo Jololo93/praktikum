@@ -55,7 +55,7 @@ h3 {
 }
 #sidebar {
     width: 25%;
-    
+    background-color: rgb(204, 153, 255);
     float: right;
     border-radius: 10px;
 }
